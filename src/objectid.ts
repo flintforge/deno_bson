@@ -285,6 +285,6 @@ export class ObjectId {
   }
 
   [Symbol.for("Deno.customInspect")](): string {
-    return `new ObjectId("${this.toHexString()}")`;
+    return `ObjectId("${this.toHexString()}")`;
   }
 }
